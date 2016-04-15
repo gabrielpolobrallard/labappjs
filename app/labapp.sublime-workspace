@@ -1,0 +1,1262 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"bs3inputtex",
+				"bs3-input:text:h	bs3-input-text-h"
+			],
+			[
+				"bs3-for",
+				"bs3-form:horizontal	bs3-form-horizontal"
+			],
+			[
+				"bs3-we",
+				"bs3-well:sm	bs3-well-sm"
+			],
+			[
+				"bs3",
+				"bs3-well	bs3-well"
+			],
+			[
+				"bs3-inputtex",
+				"bs3-input:text:h	bs3-input-text-h"
+			],
+			[
+				"bs3-input",
+				"bs3-input:text	bs3-input-text"
+			],
+			[
+				"bs3form",
+				"bs3-form:horizontal	bs3-form-horizontal"
+			],
+			[
+				"Fecha",
+				"FechaSolicitud"
+			],
+			[
+				"bs3sele",
+				"bs3-select:h	bs3-select-h"
+			],
+			[
+				"pad",
+				"padding-bottom"
+			],
+			[
+				"analisisdata",
+				"AnalisisData"
+			],
+			[
+				"bs3-pan",
+				"bs3-panel:info	bs3-panel-info"
+			],
+			[
+				"padd",
+				"padding-top"
+			],
+			[
+				"ng-repeat",
+				"ng-repeat-start	AngularJS"
+			],
+			[
+				"Deta",
+				"AnalisisDetalles"
+			],
+			[
+				"Ana",
+				"AnalisisDetalles"
+			],
+			[
+				"Pacie",
+				"PacienteDataService"
+			],
+			[
+				"an",
+				"anactrl"
+			],
+			[
+				"sucur",
+				"sucursalId"
+			],
+			[
+				"sucu",
+				"sucursalId"
+			],
+			[
+				"data",
+				"pacientesData"
+			],
+			[
+				"pacienteda",
+				"pacientesData"
+			],
+			[
+				"PacienteDat",
+				"pacientesData"
+			],
+			[
+				"pacien",
+				"pacientesData"
+			],
+			[
+				"defe",
+				"deferred"
+			],
+			[
+				"medico",
+				"Medico"
+			],
+			[
+				"ur",
+				"apiUrl"
+			],
+			[
+				"mya",
+				"myArray"
+			],
+			[
+				"medicosl",
+				"medicosLista"
+			],
+			[
+				"gruposanguineol",
+				"gruposanguineolist"
+			],
+			[
+				"resul",
+				"resultNombre"
+			],
+			[
+				"gruposan",
+				"gruposanguineolist"
+			],
+			[
+				"grupos",
+				"gruposanguineolist"
+			],
+			[
+				"grupo",
+				"GrupoSanguineoId"
+			],
+			[
+				"gri",
+				"gruposanguineolist"
+			],
+			[
+				"gruposa",
+				"gruposanguineolist"
+			],
+			[
+				"ngcl",
+				"ng-click	AngularJS"
+			],
+			[
+				"ng",
+				"ng-repeat"
+			],
+			[
+				"dtoop",
+				"DTOptionsBuilder"
+			],
+			[
+				"paci",
+				"pacientesxxx"
+			],
+			[
+				"pacientere",
+				"pacientesResult"
+			],
+			[
+				"Pac",
+				"PacienteService"
+			],
+			[
+				"defer",
+				"defered"
+			],
+			[
+				"pac",
+				"pacientesxxx"
+			],
+			[
+				"Gr",
+				"GrupoSanguineo"
+			],
+			[
+				"con",
+				"controller	AngularJS"
+			],
+			[
+				"get",
+				"getAllPacientes"
+			],
+			[
+				"loadm",
+				"loadMyFile"
+			],
+			[
+				"oc",
+				"ocLazyLoad"
+			],
+			[
+				"html",
+				"htmlboiler	htmlboiler"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "scripts/controllers/AnalisisController.js",
+			"settings":
+			{
+				"buffer_size": 4606,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "scripts/app.js",
+			"settings":
+			{
+				"buffer_size": 7156,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "<form  class=\"form-horizontal\" role=\"form\">\n\n	\n	<div class=\"form-group\">\n		<label for=\"inputPaciente\" class=\"col-xs-12 col-sm-2  control-label\">Paciente:</label>\n		<div class=\"col-xs-12 col-sm-10 \">\n			<select name=\"paciente\" id=\"inputPaciente\" class=\"form-control\" required=\"required\">\n				<option value=\"Analisis.PacienteId\">{{Analisis.Paciente.Nombre + \" \" + Analisis.Paciente.Apellido}}</option>\n			</select>\n		</div>\n	</div>\n	<div class=\"form-group\">\n		<label for=\"inputMedico\" class=\"col-xs-12 col-sm-2 control-label\">Medico:</label>\n		<div class=\"col-xs-12 col-sm-10\">\n			<select name=\"medico\" id=\"inputMedico\" class=\"form-control\" >\n				<option value=\"Analisis.MedicoId\">{{Analisis.MedicoSolicitud.Nombre + \" \" + Analisis.MedicoSolicitud.Apellido}}</option>\n			</select>\n		</div>\n	</div>\n	<div class=\"form-group\">\n		<label for=\"inputObrasocial\" class=\"col-sm-2 control-label\">Obra Social:</label>\n		<div class=\"col-sm-2\">\n			<select name=\"obrasocial\" id=\"inputObrasocial\" class=\"form-control\" >\n				<option value=\"Analisis.ObraSocialId\">{{Analisis.ObraSocial.Sigla }}</option>\n			</select>\n		</div>\n	</div>\n	<div class=\"form-group\">\n		<label for=\"inputEstado\" class=\"col-sm-2 control-label\">Estado:</label>\n		<div class=\"col-sm-2\">\n			<select name=\"estado\" id=\"inputEstado\" class=\"form-control\" required=\"required\">\n				<option value=\"Analisis.EstadoId\">{{Analisis.Estado.Detalle }}</option>\n			</select>\n		</div>\n	</div>\n	<div class=\"form-group\">\n		<label for=\"inputPrecio\" class=\"col-sm-2 control-label\">Precio:</label>\n		<div class=\"col-sm-10\">\n			<input type=\"number\" name=\"precio\" id=\"inputPrecio\" class=\"form-control\"  step=\"1\" value=\"\" ng-model=\"Analisis.PrecioVenta\" title=\"Precio de Venta al Publico\">\n		</div>\n	</div>\n	<div class=\"form-group\">\n		<label for=\"inputFechaSolicitud\" class=\"col-sm-2 control-label\">Fecha Solicitud:</label>\n		<div class=\"col-sm-10\">\n			<ng-datepicker ng-model=\"Analisis.FechaSolicitud\" locale=\"es\" name=\"fechaSolicitud\" id=\"inputFechaSolicitud\" class=\"form-control\" value=\"\" required=\"required\"  title=\"\">\n			</ng-datepicker>\n		</div>\n	</div>\n	<div class=\"form-group\">\n		<label for=\"inputFechaEntrega\" class=\"col-sm-2 control-label\">Fecha Entrega:</label>\n		<div class=\"col-sm-10\">\n			<ng-datepicker ng-model=\"Analisis.FechaEntrega\" locale=\"es\" id=\"inputFechaEntrega\"  id=\"inputFechaEntrega\" class=\"form-control\">\n			</ng-datepicker>\n		</div>\n	</div>\n	<div class=\"form-group\">\n		<div class=\"col-sm-10 col-sm-offset-2\">\n			<button type=\"submit\" class=\"btn btn-primary\">Submit</button>\n		</div>\n	</div>\n</form>\n<pre id=\"default-spacing\">{{ Analisis | json }}</pre>",
+			"file": "views/dashboard/Analisis/tabs/editargeneral.html",
+			"file_size": 2667,
+			"file_write_time": 131048158424887825,
+			"settings":
+			{
+				"buffer_size": 2608,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "views/dashboard/Analisis/tabs/editardetalle.html",
+			"settings":
+			{
+				"buffer_size": 380,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "\"AnalisisDetalleId\": 2,\n      \"AnalisisId\": 2,\n      \"DeterminacionAnalisisId\": 1,\n      \"EstadoId\": 1,\n      \"NombreCampoAnalisisId\": 2,\n      \"UnidadMedidaId\": 1,\n      \"Observacion\": \"Ninguna\",\n      \"FechaDeAnalisis\": \"2016-04-08T01:17:50.433\",\n      \"Valor\": 2,\n      \"UnidadMedida\": null,\n      \"DeterminacionAnalisis\": {\n        \"DeterminacionAnalisisId\": 1,\n        \"Codigo\": 1,\n        \"Detalle\": \"ACTO BIOQUÍMICO.\",\n        \"UnidadBioquimica\": 3\n      },\n      \"Estado\": null,\n      \"NombreCampoAnalisis\": {\n        \"NombreCampoAnalisisId\": 2,\n        \"Nombre\": \"Orina completa\",\n        \"ValorMaximo\": 30,\n        \"ValorMinimo\": 2,\n        \"ValorNormal\": 20,\n        \"UnidadMedidaId\": 1,\n        \"UnidadMedida\": null\n      }\n    }",
+			"settings":
+			{
+				"buffer_size": 741,
+				"line_ending": "Windows",
+				"name": "\"AnalisisDetalleId\": 2,"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 150.0,
+		"last_filter": "pretty json",
+		"selected_items":
+		[
+			[
+				"pretty json",
+				"Pretty JSON: Format (Pretty Print) JSON"
+			],
+			[
+				"json",
+				"Set Syntax: JSON"
+			],
+			[
+				"bs3form",
+				"Snippet: bs3-form-horizontal"
+			],
+			[
+				"css c",
+				"Run CSScomb"
+			],
+			[
+				"bs3 input da	",
+				"Snippet: bs3-input-date-h"
+			],
+			[
+				"bs3 input da",
+				"Snippet: bs3-input-date-h"
+			],
+			[
+				"bs3 input num",
+				"Snippet: bs3-input-number-h"
+			],
+			[
+				"bs3 input nu	",
+				"Snippet: bs3-input-number-h"
+			],
+			[
+				"bs3 input te	",
+				"Snippet: bs3-input-text-h"
+			],
+			[
+				"bs3 sele",
+				"Snippet: bs3-input-select"
+			],
+			[
+				"bs3 select",
+				"Snippet: bs3-select-h"
+			],
+			[
+				"bs3 form",
+				"Snippet: bs3-form-horizontal"
+			],
+			[
+				"bs3",
+				"Snippet: bs3-panel-heading"
+			],
+			[
+				"bs3-tab",
+				"Snippet: bs3-tabs"
+			],
+			[
+				"bs3 tab",
+				"Snippet: bs3-table-condensed"
+			],
+			[
+				"bs input",
+				"Snippet: bs3-input-text"
+			],
+			[
+				"bs3 input",
+				"Snippet: bs3-input-label"
+			],
+			[
+				"bs3 input gr",
+				"Snippet: bs3-input-group-text-btn"
+			],
+			[
+				"bs3-inputte",
+				"Snippet: bs3-input-tel"
+			],
+			[
+				"bs3-form",
+				"Snippet: bs3-form-horizontal"
+			],
+			[
+				"bs3-pan",
+				"Snippet: bs3-panel"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"htmlb",
+				"HTMLBeautify"
+			],
+			[
+				"install ",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"prett",
+				"Pretty JSON: Validate"
+			],
+			[
+				"emmet",
+				"Emmet: Reload Extensions"
+			],
+			[
+				"Snippet:",
+				"Snippet: |orderBy"
+			],
+			[
+				"Package Control: insta",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: list",
+				"Package Control: List Packages"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Disable Package"
+			],
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ins",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: inst	",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ins	",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: insta	",
+				"Package Control: Install Package"
+			],
+			[
+				"Snippet: html",
+				"Snippet: bs3-thumbnail"
+			],
+			[
+				"Package Control: install",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: install 	",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: install	",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: install Package ",
+				"Package Control: Install Package"
+			],
+			[
+				"install pac",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 528.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"—– BEGIN LICENSE —–",
+			"install",
+			"instasll",
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/Users/java/Downloads/zwamp-x64-2.2.1-full/vdrive/web/sbadmin/sb-admin-angular",
+		"/C/Users/java/Downloads/zwamp-x64-2.2.1-full/vdrive/web/sbadmin/sb-admin-angular/app",
+		"/C/Users/java/Downloads/zwamp-x64-2.2.1-full/vdrive/web/sbadmin/sb-admin-angular/app/views",
+		"/C/Users/java/Downloads/zwamp-x64-2.2.1-full/vdrive/web/sbadmin/sb-admin-angular/app/views/dashboard",
+		"/C/Users/java/Downloads/zwamp-x64-2.2.1-full/vdrive/web/sbadmin/sb-admin-angular/app/views/dashboard/Analisis",
+		"/C/Users/java/Downloads/zwamp-x64-2.2.1-full/vdrive/web/sbadmin/sb-admin-angular/app/views/dashboard/Analisis/tabs",
+		"/C/Users/java/Downloads/zwamp-x64-2.2.1-full/vdrive/web/sbadmin/sb-admin-angular/bower_components",
+		"/C/Users/java/Downloads/zwamp-x64-2.2.1-full/vdrive/web/sbadmin/sb-admin-angular/bower_components/ngDatepicker",
+		"/C/Users/java/Downloads/zwamp-x64-2.2.1-full/vdrive/web/sbadmin/sb-admin-angular/bower_components/ngDatepicker/src",
+		"/C/Users/java/Downloads/zwamp-x64-2.2.1-full/vdrive/web/sbadmin/sb-admin-angular/bower_components/ngDatepicker/src/css",
+		"/C/Users/java/Downloads/zwamp-x64-2.2.1-full/vdrive/web/sbadmin/sb-admin-angular/bower_components/ngDatepicker/src/js"
+	],
+	"file_history":
+	[
+		"/C/Users/java/Downloads/zwamp-x64-2.2.1-full/vdrive/web/sbadmin/sb-admin-angular/app/views/dashboard/Pacientes/editar.html",
+		"/C/Users/java/Downloads/zwamp-x64-2.2.1-full/vdrive/web/sbadmin/sb-admin-angular/app/views/dashboard/Analisis/editaranalisis.html",
+		"/C/Users/java/Downloads/zwamp-x64-2.2.1-full/vdrive/web/sbadmin/sb-admin-angular/app/index.html",
+		"/C/Users/java/Downloads/zwamp-x64-2.2.1-full/vdrive/web/sbadmin/sb-admin-angular/bower_components/ngDatepicker/src/js/ngDatepicker.js",
+		"/C/Users/java/Downloads/zwamp-x64-2.2.1-full/vdrive/web/sbadmin/sb-admin-angular/bower_components/ngDatepicker/src/css/ngDatepicker.css",
+		"/C/Users/java/Downloads/zwamp-x64-2.2.1-full/vdrive/web/sbadmin/sb-admin-angular/app/scripts/controllers/PacienteDataServices.js",
+		"/C/Users/java/Downloads/zwamp-x64-2.2.1-full/vdrive/web/sbadmin/sb-admin-angular/bower_components/moment/moment.js",
+		"/C/Users/java/Downloads/zwamp-x64-2.2.1-full/vdrive/web/sbadmin/sb-admin-angular/bower_components/moment/min/moment-with-locales.min.js",
+		"/C/Users/java/Downloads/zwamp-x64-2.2.1-full/vdrive/web/sbadmin/sb-admin-angular/bower_components/ng-bootstrap-datepicker/dist/js/ng-bootstrap-datepicker.js",
+		"/C/Users/java/Downloads/zwamp-x64-2.2.1-full/vdrive/web/sbadmin/sb-admin-angular/app/scripts/app.js",
+		"/C/Users/java/Downloads/zwamp-x64-2.2.1-full/vdrive/web/sbadmin/sb-admin-angular/bower_components/bootstrap-datepicker/js/bootstrap-datepicker.js",
+		"/C/Users/java/Downloads/zwamp-x64-2.2.1-full/vdrive/web/sbadmin/sb-admin-angular/bower_components/ng-bootstrap-datepicker/dist/css/ng-bootstrap-datepicker.css",
+		"/C/Users/java/Downloads/zwamp-x64-2.2.1-full/vdrive/web/sbadmin/sb-admin-angular/bower_components/ng-bootstrap-datepicker/dist/css/ng-bootstrap-datepicker.min.css",
+		"/C/Users/java/Downloads/zwamp-x64-2.2.1-full/vdrive/web/sbadmin/sb-admin-angular/node_modules/mout/date.js",
+		"/C/Users/java/Downloads/zwamp-x64-2.2.1-full/vdrive/web/sbadmin/sb-admin-angular/app/views/dashboard/Analisis/tabs/editargeneral.html",
+		"/C/Users/java/Downloads/zwamp-x64-2.2.1-full/vdrive/web/sbadmin/sb-admin-angular/app/views/dashboard/Analisis/tabs/editardetalle.html",
+		"/C/Users/java/Downloads/zwamp-x64-2.2.1-full/vdrive/web/sbadmin/sb-admin-angular/app/scripts/controllers/AnalisisController.js",
+		"/C/Users/java/Downloads/zwamp-x64-2.2.1-full/vdrive/web/sbadmin/sb-admin-angular/app/views/dashboard/Analisis/tree/carmoreinfo.html",
+		"/C/Users/java/Downloads/zwamp-x64-2.2.1-full/vdrive/web/sbadmin/sb-admin-angular/app/views/dashboard/Analisis/index.html",
+		"/C/Users/java/Desktop/analisis.html",
+		"/C/Users/java/Desktop/sss.json",
+		"/C/Users/java/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/C/Users/java/AppData/Roaming/Sublime Text 3/Packages/Emmet/Emmet.sublime-settings",
+		"/C/Users/java/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
+		"/C/Users/java/AppData/Roaming/Sublime Text 3/Packages/Default/Default (Windows).sublime-keymap",
+		"/C/Users/java/Downloads/zwamp-x64-2.2.1-full/vdrive/web/sbadmin/sb-admin-angular/app/views/dashboard/Analisis/tree/buycell.html",
+		"/C/Users/java/Downloads/zwamp-x64-2.2.1-full/vdrive/web/sbadmin/sb-admin-angular/app/scripts/controllers/pacienteController.js",
+		"/C/Users/java/AppData/Roaming/Sublime Text 3/Packages/User/SublimeLinter.sublime-settings",
+		"/C/Users/java/Downloads/zwamp-x64-2.2.1-full/vdrive/web/sbadmin/sb-admin-angular/app/scripts/controllers/Utilidades.js",
+		"/C/Users/java/Downloads/zwamp-x64-2.2.1-full/vdrive/web/sbadmin/sb-admin-angular/app/views/dashboard/Analisis/tree/priceheader.html",
+		"/C/Users/java/Downloads/zwamp-x64-2.2.1-full/vdrive/web/sbadmin/sb-admin-angular/app/views/dashboard/Analisis/tree/treeNodeWithCustomToggle.html",
+		"/C/Users/java/Downloads/zwamp-x64-2.2.1-full/vdrive/web/sbadmin/sb-admin-angular/app/views/dashboard/Analisis/tree/pictureHeader.html",
+		"/C/Users/java/Downloads/zwamp-x64-2.2.1-full/vdrive/web/sbadmin/sb-admin-angular/app/views/dashboard/Analisis/tree/artistPicture.html",
+		"/C/Users/java/Downloads/zwamp-x64-2.2.1-full/vdrive/web/sbadmin/sb-admin-angular/app/views/dashboard/Analisis/tree/artistMoreInfo.html",
+		"/C/Users/java/Downloads/zwamp-x64-2.2.1-full/vdrive/web/sbadmin/sb-admin-angular/bower_components/adapt-strap/src/treebrowser/treebrowser.less",
+		"/C/Users/java/Downloads/zwamp-x64-2.2.1-full/vdrive/web/sbadmin/sb-admin-angular/bower_components/adapt-strap/src/treebrowser/treebrowser.js",
+		"/C/Users/java/Downloads/zwamp-x64-2.2.1-full/vdrive/web/sbadmin/sb-admin-angular/app/views/dashboard/Analisis/tree/treeHeader.html",
+		"/C/Users/java/Downloads/zwamp-x64-2.2.1-full/vdrive/web/sbadmin/sb-admin-angular/app/views/dashboard/Pacientes/index.html",
+		"/C/Users/java/Downloads/zwamp-x64-2.2.1-full/vdrive/web/sbadmin/sb-admin-angular/app/scripts/directives/sidebar/sidebar.html",
+		"/C/Users/java/AppData/Roaming/Sublime Text 3/Packages/SublimeLinter/Default (Windows).sublime-keymap",
+		"/C/Users/java/AppData/Roaming/Sublime Text 3/Packages/SublimeLinter/SublimeLinter.sublime-settings",
+		"/C/Users/java/AppData/Roaming/Sublime Text 3/Packages/ColorPicker/ColorPicker.sublime-settings",
+		"/C/Users/java/AppData/Roaming/Sublime Text 3/Installed Packages/AngularInject.sublime-package",
+		"/C/Users/java/AppData/Roaming/Sublime Text 3/Packages/AngularJS/AngularJS-js-completions.sublime-settings",
+		"/C/Users/java/AppData/Roaming/Sublime Text 3/Packages/AngularJS/AngularJS-sublime-package.sublime-settings",
+		"/C/Users/java/Downloads/zwamp-x64-2.2.1-full/vdrive/web/sbadmin/sb-admin-angular/app/scripts/controllers/AnalisisController",
+		"/C/Users/java/Downloads/zwamp-x64-2.2.1-full/vdrive/web/sbadmin/sb-admin-angular/app/views/dashboard/Pacientes/nuevopaciente.html",
+		"/C/Users/java/Downloads/zwamp-x64-2.2.1-full/vdrive/web/sbadmin/sb-admin-angular/bower_components/ng-table/dist/ng-table.js",
+		"/C/Users/java/Downloads/zwamp-x64-2.2.1-full/vdrive/web/sbadmin/sb-admin-angular/app/views/dashboard/Pacientes/modalEditarMedicos1.html",
+		"/C/Users/java/Downloads/zwamp-x64-2.2.1-full/vdrive/web/sbadmin/sb-admin-angular/app/views/dashboard/Pacientes/modalEditar.html",
+		"/C/Users/java/Downloads/zwamp-x64-2.2.1-full/vdrive/web/sbadmin/sb-admin-angular/app/views/dashboard/Pacientes/modalEditarOs.html",
+		"/C/Users/java/Downloads/zwamp-x64-2.2.1-full/vdrive/web/sbadmin/sb-admin-angular/bower_components/angular-schema-form/dist/bootstrap-decorator.min.js",
+		"/C/Users/java/Downloads/zwamp-x64-2.2.1-full/vdrive/web/sbadmin/sb-admin-angular/bower_components/angular-datatables/dist/angular-datatables.min.js",
+		"/C/Users/java/Downloads/zwamp-x64-2.2.1-full/vdrive/web/sbadmin/sb-admin-angular/app/data.json",
+		"/C/Users/java/Downloads/zwamp-x64-2.2.1-full/vdrive/web/sbadmin/sb-admin-angular/bower_components/datatables.net/js/jquery.dataTables.js",
+		"/C/Users/java/Downloads/zwamp-x64-2.2.1-full/vdrive/web/sbadmin/sb-admin-angular/bower_components/jquery/dist/jquery.js",
+		"/E/Pelis/película_completa_en_español_HD_Castellano.rar",
+		"/C/Users/java/Downloads/zwamp-x64-2.2.1-full/vdrive/web/sbadmin/sb-admin-angular/bower_components/angular-datatables/dist/plugins/bootstrap/angular-datatables.bootstrap.js",
+		"/C/Users/java/Downloads/zwamp-x64-2.2.1-full/vdrive/web/sbadmin/sb-admin-angular/app/scripts/controllers/MisControllers.js",
+		"/C/Users/java/Downloads/zwamp-x64-2.2.1-full/vdrive/web/sbadmin/sb-admin-angular/bower_components/angular-datatables/dist/angular-datatables.js",
+		"/C/Users/java/Downloads/zwamp-x64-2.2.1-full/vdrive/web/sbadmin/sb-admin-angular/app/scripts/controllers/pacientes/pacienteController.js",
+		"/C/Users/java/Downloads/zwamp-x64-2.2.1-full/vdrive/web/sbadmin/sb-admin-angular/dist/index.html",
+		"/C/Users/java/Downloads/zwamp-x64-2.2.1-full/vdrive/web/sbadmin/sb-admin-angular/bower_components/angular/angular.js",
+		"/C/Users/java/Downloads/zwamp-x64-2.2.1-full/vdrive/web/sbadmin/sb-admin-angular/app/scripts/controllers/form.js",
+		"/C/Users/java/Downloads/zwamp-x64-2.2.1-full/vdrive/web/sbadmin/sb-admin-angular/app/index.html.backup",
+		"/C/Users/java/Downloads/zwamp-x64-2.2.1-full/vdrive/web/sbadmin/sb-admin-angular/app/scripts/directives/sidebar/sidebar-search/sidebar-search.js",
+		"/C/Users/java/Downloads/zwamp-x64-2.2.1-full/vdrive/web/sbadmin/sb-admin-angular/app/scripts/directives/sidebar/sidebar-search/sidebar-search.html",
+		"/C/Users/java/Downloads/zwamp-x64-2.2.1-full/vdrive/web/sbadmin/sb-admin-angular/app/scripts/directives/header/header.html",
+		"/C/Users/java/Downloads/zwamp-x64-2.2.1-full/vdrive/web/sbadmin/sb-admin-angular/app/scripts/app.js.backup",
+		"/C/Users/java/Downloads/zwamp-x64-2.2.1-full/vdrive/web/sbadmin/sb-admin-angular/app/views/dashboard/home.html",
+		"/C/Users/java/Downloads/zwamp-x64-2.2.1-full/vdrive/web/sbadmin/sb-admin-angular/.tmp/styles/sb-admin-2.css",
+		"/C/Users/java/Downloads/zwamp-x64-2.2.1-full/vdrive/web/sbadmin/sb-admin-angular/app/scripts/controllers/main.js",
+		"/C/Users/java/Downloads/zwamp-x64-2.2.1-full/vdrive/web/sbadmin/sb-admin-angular/app/scripts/controllers/probandogabriel.js",
+		"/C/Users/java/Desktop/htmlboiler",
+		"/C/Users/java/AppData/Roaming/Sublime Text 3/Packages/User/htmlboiler.sublime-snippet",
+		"/C/Users/java/AppData/Roaming/Sublime Text 3/Packages/User/Distraction Free.sublime-settings",
+		"/C/Users/java/AppData/Roaming/Sublime Text 3/Packages/User/Plain text.sublime-settings",
+		"/C/Users/java/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings"
+	],
+	"find":
+	{
+		"height": 38.0
+	},
+	"find_in_files":
+	{
+		"height": 90.0,
+		"where_history":
+		[
+			"<project>",
+			"C:\\Users\\java\\Downloads\\zwamp-x64-2.2.1-full\\vdrive\\web\\sbadmin",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"<h3>Muestras</h3>",
+			"  ",
+			"ng-datepicker-input",
+			"input",
+			"jkuri.datepicker",
+			"ng-datepicker-input",
+			".ng-datepicker",
+			".ng-datepicker-input",
+			"ng-datepicker-input",
+			"date",
+			"Observacion",
+			"anactrl",
+			"	\n",
+			"$scope",
+			";\n",
+			"utilidades",
+			"reload",
+			"css",
+			"jquery",
+			"dataTables_paginate",
+			"angular\n .module('sbAdminApp'",
+			"label",
+			"Search",
+			"/*!",
+			"Search",
+			"angular-datatables.css",
+			"'\n"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"li*4li*5",
+			"5",
+			";\n",
+			"	\n",
+			"openOsModal",
+			"Medico",
+			"},",
+			"');\n"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 3,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "scripts/controllers/AnalisisController.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4606,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4195,
+								4195
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content"
+							],
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"translate_tabs_to_spaces": false,
+							"word_wrap": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 462.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "scripts/app.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7156,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								357,
+								374
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content"
+							],
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 132.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "views/dashboard/Analisis/tabs/editargeneral.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2608,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								44,
+								44
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content"
+							],
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 660.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "views/dashboard/Analisis/tabs/editardetalle.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 380,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								45,
+								45
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content"
+							],
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 4,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 741,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								251,
+								251
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"auto_name": "\"AnalisisDetalleId\": 2,",
+							"bh_regions":
+							[
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content"
+							],
+							"default_dir": "C:\\Users\\java\\Downloads\\zwamp-x64-2.2.1-full\\vdrive\\web\\sbadmin\\sb-admin-angular",
+							"syntax": "Packages/JavaScript/JSON.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 38.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.5,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 130.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.unsaved_changes":
+	{
+		"height": 142.0
+	},
+	"pinned_build_system": "",
+	"project": "labapp.sublime-project",
+	"replace":
+	{
+		"height": 52.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"analisisdetall",
+				"app\\views\\dashboard\\Analisis\\tabs\\editardetalle.html"
+			],
+			[
+				"moment-with-locales",
+				"bower_components\\moment\\min\\moment-with-locales.min.js"
+			],
+			[
+				"moment-with-locales.min.js",
+				"bower_components\\moment\\min\\moment-with-locales.min.js"
+			],
+			[
+				"index",
+				"app\\index.html"
+			],
+			[
+				"app",
+				"app\\scripts\\app.js"
+			],
+			[
+				"momen",
+				"bower_components\\moment\\moment.js"
+			],
+			[
+				"ngboot",
+				"bower_components\\ng-bootstrap-datepicker\\dist\\js\\ng-bootstrap-datepicker.js"
+			],
+			[
+				"ngdatepickercss",
+				"bower_components\\ngDatepicker\\src\\css\\ngDatepicker.css"
+			],
+			[
+				"ngdatepic",
+				"bower_components\\ngDatepicker\\src\\js\\ngDatepicker.js"
+			],
+			[
+				"datepicker",
+				"bower_components\\bootstrap-datepicker\\js\\bootstrap-datepicker.js"
+			],
+			[
+				"ngdatepicj",
+				"bower_components\\ngDatepicker\\src\\js\\ngDatepicker.js"
+			],
+			[
+				"ng-bootstrap-datepicker.css",
+				"bower_components\\ng-bootstrap-datepicker\\dist\\css\\ng-bootstrap-datepicker.min.css"
+			],
+			[
+				"ng-datepicker-",
+				"bower_components\\ng-bootstrap-datepicker\\dist\\css\\ng-bootstrap-datepicker.css"
+			],
+			[
+				"pacienteeditar",
+				"app\\views\\dashboard\\Pacientes\\editar.html"
+			],
+			[
+				"date",
+				"node_modules\\mout\\date.js"
+			],
+			[
+				"pacientedata",
+				"app\\scripts\\controllers\\PacienteDataServices.js"
+			],
+			[
+				"editardeta",
+				"app\\views\\dashboard\\Analisis\\tabs\\editardetalle.html"
+			],
+			[
+				"editarana",
+				"sb-admin-angular\\app\\views\\dashboard\\Analisis\\editaranalisis.html"
+			],
+			[
+				"paciente",
+				"sb-admin-angular\\app\\scripts\\controllers\\pacienteController.js"
+			],
+			[
+				"tree",
+				"sb-admin-angular\\bower_components\\adapt-strap\\src\\treebrowser\\treebrowser.less"
+			],
+			[
+				"pacientecontroll",
+				"sb-admin-angular\\app\\scripts\\controllers\\pacienteController.js"
+			],
+			[
+				"utilidad",
+				"sb-admin-angular\\app\\scripts\\controllers\\Utilidades.js"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": false,
+	"side_bar_width": 261.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

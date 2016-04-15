@@ -1,0 +1,76 @@
+<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseAnalisis" aria-expanded="false" aria-controls="collapseExample"><img src="http://placehold.it/100x100" alt="Analisis Detalles">
+  Analisis <span class="badge">
+  {{Analisis.AnalisisDetalles.length}}</span>
+</button>
+<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseMuestras" aria-expanded="false" aria-controls="collapseExample"><img src="http://placehold.it/100x100" alt="Analisis Detalles">  Muestras <span class="badge">
+  {{Analisis.Muestras.length}}</span>
+
+</button>
+<div class="collapse" id="collapseAnalisis">
+  <div class="well" ng-repeat="ad in Analisis.AnalisisDetalles">
+    Detalle de Análisis
+  </div>
+  <div class="table-responsive">
+    <table class="table table-hover">
+      <thead>
+        <tr>
+          <th>Id</th>
+          <th>Determinacion</th>
+          <th>Estado</th>
+          <th>Nombre/Campo</th>
+          <th>Valores Ref</th>
+          <th>Fecha</th>
+          <th>Observacion</th>
+          <th>Valor Hallado</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr ng-repeat="ad in Analisis.AnalisisDetalles">
+          <td>{{ad.AnalisisDetalleId}}</td>
+          <td>{{ad.DeterminacionAnalisis.Detalle}}</td>
+          <td>{{ showStatus(ad) }}</td>
+          <td>{{ad.NombreCampoAnalisis.Nombre}}</td>
+          <td> min:{{ad.NombreCampoAnalisis.ValorMinimo  +' normal:'+ ad.NombreCampoAnalisis.ValorNormal+ ' max:' +ad.NombreCampoAnalisis.ValorMaximo }} {{showUnidadMedidas(ad)}}</td>
+          <td>{{ad.FechaDeAnalisis | date:shortDate}} </td>
+          <td>{{ad.Observacion}}</td>
+          <td>{{ad.Valor}} {{showUnidadMedidas(ad)}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div>
+<div class="btn-group">
+  <button type="button" class="btn btn-default" ng-click="openModalNuevoAnalisisDetalle()">Nuevo</button>
+  <button type="button" class="btn btn-default">Eliminar</button>
+</div>  
+  </div>
+</div>
+<div class="collapse" id="collapseMuestras">
+  <div class="well">
+    Muestras
+  </div>
+  <div class="table-responsive">
+    <table class="table table-hover">
+      <thead>
+        <tr>
+          <th>Id</th>
+          <th>Tipo</th>
+          <th>Fecha</th>
+          <th>Estado</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr ng-repeat="mu in Analisis.Muestras">
+          <td>{{mu.MuestraId}}</td>
+          <td>{{mu.TipoMuestra.Detalle}}</td>
+          <td>{{mu.FechaMuestra  | date:shortDate}}</td>
+          <td>{{ showStatus(mu) }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="btn-group">
+  <button type="button" class="btn btn-default">Nuevo</button>
+  <button type="button" class="btn btn-default">Eliminar</button>
+</div>  
+</div>

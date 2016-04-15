@@ -1,0 +1,39 @@
+<div>
+	<h2>Informacion Analisis</h2>
+	<h3>General</h3>
+	<p><strong>Analisis Id: </strong>{{ item.AnalisisId }}</p>
+	<p><strong>Fecha de Solicitud:</strong>{{ item.FechaSolicitud }}</p>
+	<p><strong>Fecha de Entrega: </strong>{{ item.FechaEntrega }}</p>
+	<p><strong>Estado: </strong>{{ item.EstadoDescripcion }}</p>
+	<h4>Medico Solicitante</h4>
+	<p><strong>Nombre:</strong>{{ item.MedicoSolicitud.Nombre }} </p>
+	<p><strong>Especialidad:</strong> {{ item.MedicoSolicitud.Especialidad }}</p>
+	<h4>Muestras</h4>
+	<ul ng-repeat="m in item.Muestras">
+		<li>Id: {{m.MuestraId}}</li>
+		<li >Tipo de Muestra: {{m.TipoMuestra.Detalle}}</li>
+		<li >Estado: {{m.Estado.Descripcion}}</li>
+		<li >Fecha de Muestra: {{m.FechaMuestra}}</li>
+	</ul>
+	<h4>Obra Social</h4>
+	<p><strong>Nombre:</strong>{{ item.ObraSocial.Sigla }}</p>
+	<p><strong>Prepaga:</strong>{{ item.ObraSocial.Prepaga }}</p>
+	<p><strong>Nomenclador:</strong>{{ item.ObraSocial.Nomenclador }}</p>
+	<h2>Detalles del Analisis</h2>
+	<p><strong>Cantidad: </strong>{{ item.AnalisisDetalles.length}}</p>
+	<ul>
+		<li ng-repeat-start="m in item.AnalisisDetalles" >Id: {{m.AnalisisDetalleId}}</li>
+		<li>Determinacion: {{m.DeterminacionAnalisis.Detalle}}</li>
+		<li >Unidad Bioquimica: {{m.DeterminacionAnalisis.UnidadBioquimica}}</li>
+		<li >Estado: {{m.Estado.Descripcion}}</li>
+		<li> Descripcion: {{m.NombreCampoAnalisis.Nombre}} </li>
+		<li>Unidad de Medida: {{m.NombreCampoAnalisis.UnidadMedida}} </li>
+		<li>Valores de Referencia: <small>min:</small> {{m.NombreCampoAnalisis.ValorMinimo}} - <small>normal:</small> {{m.NombreCampoAnalisis.ValorNormal}} - <small> maximo: </small>  {{m.NombreCampoAnalisis.ValorMaximo}} </li>
+		<li>Valores Hallados: {{m.Valor }} </li>
+		<li ng-repeat-end>Observacion: {{m.Observacion }} </li>
+	</ul>
+
+</div>
+		
+
+		

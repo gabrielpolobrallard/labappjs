@@ -1,0 +1,148 @@
+
+
+
+<form name="form" class="css-form" novalidate>
+	<fieldset class="form-group">
+		<div class="form-group">
+			<label for="pnombre">Nombre</label>
+			<input class="form-control" type="text" ng-model="paciente.Nombre" id="pnombre"  required />
+		</div>
+		<br />
+
+		<label for="papellido">Apellido</label>
+		<input class="form-control" type="text" ng-model="paciente.Apellido" name="uApe" id="papellido" required="" />
+		<br />
+		<div ng-show="form.$submitted || form.uApe.$touched">
+			<div ng-show="form.uApe.$error.required">Completar Apellido.</div>
+		</div>
+
+		<label for="pdni">Dni</label>
+		<input class="form-control" type="text" ng-model="paciente.Dni" name="uDni" id="pdni" required="" />
+		<br />
+		<div ng-show="form.$submitted || form.uDni.$touched">
+			<div ng-show="form.uDni.$error.required">Completar DNI</div>
+		</div>
+
+		<label for="ptelefono">Telefono</label>
+		<input class="form-control" type="text" ng-model="paciente.Telefono" name="uTelefono" id="ptelefono" required="" />
+		<br />
+		<div ng-show="form.$submitted || form.uTelefono.$touched">
+			<div ng-show="form.uTelefono.$error.required">Completar Telefono.</div>
+		</div>
+
+
+
+
+		
+		<label for="pgrupo">Grupo Sanguineo</label>
+		<div class="list-group" id="pgrupo">
+			<a href="" class="list-group-item disabled">
+				{{paciente.GrupoDescripcion}}
+			</a>
+			<br/>
+			<button type="button" class="btn btn-default" ng-click="openGrupoModal()">Cambiar</button>
+		</div>
+
+
+		<label for="psexo">Sexo</label>
+		<div class="radio" id="psexo">
+			<label >
+				<input    type="radio" ng-model="paciente.SexoId" value="1" />Hombre
+			</label>
+		</div>
+		<div class="radio">
+			<label >
+				<input  type="radio" ng-model="paciente.SexoId" value="2" />Mujer
+			</label>
+		</div>
+		<br />
+
+
+		<div>
+			<label for="pfechanacimiento">Fecha de Nacimiento</label>
+			<ng-datepicker ng-model="paciente.FechaNacimiento" locale="es" id="pfechanacimiento">
+		</ng-datepicker>
+	</div>
+	<br />
+	<div>
+		<label for="pfechaAlta">Fecha de alta </label>
+		<ng-datepicker ng-model="paciente.FechaAlta" locale="es" id="pfechaAlta">
+	</ng-datepicker>
+	<br />
+</div>
+
+<label for="pdireccion">Direccion</label>
+<input class="form-control" type="text" ng-model="paciente.Direccion" name="uDireccion" id="pdireccion" required="" />
+<br />
+<div ng-show="form.$submitted || form.uDireccion.$touched">
+	<div ng-show="form.uDireccion.$error.required">Complete Direccion </div>
+</div>
+
+
+<label for="pobservacion">Observacion</label>
+<input class="form-control" type="text" ng-model="paciente.Observacion" name="uObservacion" id="pobservacion" required="" />
+<br />
+<div ng-show="form.$submitted || form.uObservacion.$touched">
+	<div ng-show="form.uObservacion.$error.required">Complete observacion.</div>
+</div>
+
+<label for="pobrasocial">Obras Sociales</label>
+
+<div class="list-group" id="pobrasocial">
+	<a  href="" class="list-group-item" ng-repeat="dato in paciente.ObraSocial"  >{{dato.Nombre}}</a>
+	<br>
+	<button type="button" class="btn btn-default" ng-click="openOsModal()"> <span class="glyphicon glyphicon-plus-sign" aria-hidden="true"> Obra Social </span></button>
+</div>
+<br/>
+
+<label for="pfoto">Fotografia</label>
+<div id="pfoto">
+
+	<button type="file" ngf-select="uploadFiles($file, $invalidFiles)"
+	accept="image/*" ngf-max-height="1000" ngf-max-size="1MB">
+	Seleccione archivo </button>
+	<br><br>
+	Archivo:
+	<div style="font:smaller">{{f.name}} {{errFile.name}} {{errFile.$error}} {{errFile.$errorParam}}
+		<span class="progress" ng-show="f.progress >= 0">
+			<div style="width:{{f.progress}}%"  
+			ng-bind="f.progress + '%'"></div>
+		</span>
+	</div>
+</div>
+<br>
+
+
+<label for="pmedicos">Medicos</label>
+<div class="list-group" id="pmedicos" >
+	<a  href="" class="list-group-item" ng-repeat="dato in paciente.Medico">{{dato.Nombre}} {{dato.Apellido}} - Especialidad: {{dato.Especialidad}}</a>
+	<br/>
+	<button type="button" class="btn btn-default" ng-click="openMedicoModal()"> <span class="glyphicon glyphicon-plus-sign" aria-hidden="true"> Medico </span></button>
+</div>
+<br/>
+
+
+<label for="pemail">Email</label>
+<input  class="form-control" type="email" ng-model="paciente.Email" name="uEmail" required="" id="pemail"/>
+<br />
+<div ng-show="form.$submitted || form.uEmail.$touched">
+	<span ng-show="form.uEmail.$error.required">Complete email.</span>
+	<span ng-show="form.uEmail.$error.email">No es un email valido.</span>
+</div>
+<br>
+
+<label for="pdonante">Donante</label>
+<div class="input-group" id="pdonante">
+	<span class="input-group-addon">
+		Es Donante? <input type="checkbox" aria-label="">
+	</span>
+
+</div><!-- /input-group -->
+<br>
+<input class="btn btn-primary" type="button" ng-click="reset(form)" value="Resetear" />
+<input class="btn btn-primary" type="submit" ng-click="Update(paciente)" value="Guardar"/>
+</fieldset>
+</form>
+
+
+<pre>user = {{paciente | json}}</pre>

@@ -1,0 +1,38 @@
+ 
+<h1>Gestion de Analisis</h1>
+
+
+
+<p class="text-muted" style="padding-top: 50px">
+	Analisis Seleccionado: <span class="badge" ng-bind="models.selectedCars.length"></span>
+	&nbsp;&nbsp;&nbsp;&nbsp;Buscar: <input type="text" id="tableLiteSearch" placeholder=" Ingrese su busqueda " ng-model="models.searchText"/></p>
+
+	<!-- ========== Usage ========== -->
+	<ad-table-lite table-name="TablaDeAnalisis"
+	enable-column-search="true"
+	column-definition="analisisTableColumnDefinition"
+	local-data-source="models.analisisDataSource"
+	page-sizes="[10, 20]"
+	pagination-btn-group-classes="pagination pagination-sm"
+	table-classes="table table-bordered"
+	items-not-found-message="Analisis No Encontrado"
+	selected-items="models.selectedCars"
+	snug-sort-icons="true"
+	search-text="models.searchText"
+	state="models.state"
+	on-state-change="onStateChange"
+	row-class-provider="checkRowSelected"
+	row-expand-template="views/dashboard/analisis/tree/carMoreInfo.html"
+	row-expand-callback="rowExpanded">
+</ad-table-lite>
+
+<h3 class="text-muted">Selected Items:</h3>
+<div class="well">
+	<span>{{ models.selectedCars }}</span>
+</div>
+
+<h3 class="text-muted">Drag Data Change Log:</h3>
+<div class="well">
+	<span>{{ models.changeInfo }}</span>
+</div>
+

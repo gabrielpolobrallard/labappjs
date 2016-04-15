@@ -1,0 +1,61 @@
+<form  class="form-horizontal" role="form">
+	
+	<div class="form-group">
+		<label for="inputPaciente" class="col-xs-12 col-sm-2  control-label">Paciente:</label>
+		<div class="col-xs-12 col-sm-10 ">
+			<select name="paciente" id="inputPaciente" class="form-control" required="required" ng-model="Analisis.PacienteId">
+				<option ng-selected="Analisis.PacienteId" ng-repeat="pa in OtrosDatos.Pacientes" value="pa.PacienteId">{{pa.Nombre + " " + pa.Apellido}}</option>
+			</select>
+		</div>
+	</div>
+	<div class="form-group">
+		<label for="inputMedico" class="col-xs-12 col-sm-2 control-label">Medico:</label>
+		<div class="col-xs-12 col-sm-10">
+			<select name="medico" id="inputMedico" class="form-control" ng-model="Analisis.MedicosId" >
+				<option ng-selected="Analisis.MedicosId" ng-repeat="med in OtrosDatos.Medicos" value="m.Id">{{med.Nombre + " " + med.Apellido + " - "+ med.Especialidad }}</option>
+			</select>
+		</div>
+	</div>
+	<div class="form-group">
+		<label for="inputObrasocial" class="col-sm-2 control-label">Obra Social:</label>
+		<div class="col-sm-10">
+			<select name="obrasocial" id="inputObrasocial" class="form-control" >
+				<option ng-selected="Analisis.ObraSocialId" ng-repeat="os in OtrosDatos.ObrasSociales" value="os.Id">{{os.Nombre }}</option>
+			</select>
+		</div>
+	</div>
+	<div class="form-group">
+		<label for="inputEstado" class="col-sm-2 control-label">Estado:</label>
+		<div class="col-sm-10">
+			<select name="estado" id="inputEstado" class="form-control"  required="required">
+				<option ng-selected="Analisis.EstadoId" ng-repeat="est in OtrosDatos.Estados" value="est.EstadoId">{{est.Detalle }}</option>
+			</select>
+		</div>
+	</div>
+	<div class="form-group">
+		<label for="inputPrecio" class="col-sm-2 control-label">Precio:</label>
+		<div class="col-sm-10">
+			<input type="number" name="precio" id="inputPrecio" class="form-control"  step="1" value="" ng-model="Analisis.PrecioVenta" title="Precio de Venta al Publico">
+		</div>
+	</div>
+	<div class="form-group">
+		<label for="inputFechaSolicitud" class="col-sm-2 control-label">Fecha Solicitud:</label>
+		<div class="col-sm-10">
+			<ng-datepicker ng-model="Analisis.FechaSolicitud" locale="es" name="fechaSolicitud" id="inputFechaSolicitud" class="form-control" value="" required="required"  title="">
+		</ng-datepicker>
+	</div>
+</div>
+<div class="form-group">
+	<label for="inputFechaEntrega" class="col-sm-2 control-label">Fecha Entrega:</label>
+	<div class="col-sm-10">
+		<ng-datepicker ng-model="Analisis.FechaEntrega" locale="es" id="inputFechaEntrega"  id="inputFechaEntrega" class="form-control">
+	</ng-datepicker>
+</div>
+</div>
+<div class="form-group">
+	<div class="col-sm-10 col-sm-offset-2">
+		<button type="submit" class="btn btn-primary">Submit</button>
+	</div>
+</div>
+</form>
+<pre id="default-spacing">{{ Analisis | json }}</pre>

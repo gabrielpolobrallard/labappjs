@@ -1,0 +1,36 @@
+<div class="modal-header">
+	<h3 class="modal-title"> Agregar Medico </h3>
+</div>
+<div class="modal-body">
+
+	<table class="table table-hover">
+		<thead>
+		<th>Obra Social</th>
+
+		<th>Acciones</th>
+		</thead>
+		<tbody>
+		<tr ng-repeat="data in obrasSocialesMyList">
+			<td>{{data.Nombre}}</td>
+
+			<th> <button type="button" class="btn btn-danger" ng-click="quitarOs(data.Id)">Quitar</button></th>
+		</tr>
+		</tbody>
+	</table>
+
+	<hr>
+
+
+	<p> Seleccionar Obra Social </p>
+	<select class="form-control"  ng-model="OsElegida">
+		<option ng-repeat="option in obrasSocialesFullLista" value="{{option.Id}}">{{option.Nombre}}</option>
+	</select>
+	<br/>
+	<button type="button" class="btn btn-primary" ng-click="agregarOs(OsElegida)">Agregar</button>
+</div>
+
+<div class="modal-footer">
+	<button class="btn btn-primary" type="button" ui-sref="dashboard.ObraSocial"><span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span> Ir a Gestion de Obras Sociales</button>
+	<button class="btn btn-primary" type="button" ng-click="okOs()">OK</button>
+	<button class="btn btn-warning" type="button" ng-click="cancelOs()">Cancel</button>
+</div>

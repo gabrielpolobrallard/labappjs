@@ -1,0 +1,18 @@
+
+
+
+<div class="modal-header">
+  <h3 class="modal-title">Seleccion Grupo Sanguineo </h3>
+</div>
+<div class="modal-body">
+
+ <p> Selecciona el Grupo Sanguineo </p>
+ <select class="form-control"  ng-model="grupoElegido">
+  <option ng-repeat="option in gruposanguineoli" value="{{option.Id}}">{{option.Nombre}}</option>
+</select>
+
+</div>
+<div class="modal-footer">
+  <button class="btn btn-primary" type="button" ng-click="okGrupo()">OK</button>
+  <button class="btn btn-warning" type="button" ng-click="cancelGrupo()">Cancel</button>
+</div>
