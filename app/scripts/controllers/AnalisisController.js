@@ -247,4 +247,4 @@ angular.module('sbAdminApp').controller('modalNuevoAnalisisDetalleController', [
 
 
 
-}]);
+}]);//
